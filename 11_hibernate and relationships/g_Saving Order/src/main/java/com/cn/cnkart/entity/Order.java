@@ -1,0 +1,50 @@
+package com.cn.cnkart.entity;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="orders")
+public class Order {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column
+	private int id;
+	
+	@Column
+	private String orderType;
+
+	private List<Item> items;
+
+	public int getId() {
+		return id;
+	}
+
+	public String getOrderType() {
+		return orderType;
+	}
+ 
+	public void setOrderType(String orderType) {
+		this.orderType = orderType;
+	}
+
+	public List<Item> getItems() {
+		return items;
+	}
+
+	public void setItems(List<Item> items) {
+		this.items = items;
+	}
+	
+}

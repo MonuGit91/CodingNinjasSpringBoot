@@ -1,0 +1,75 @@
+Manually----
+Inversion of Control(IOC){
+	-Bean creation
+	-table example project
+}
+dependency injection(DI){
+	-Constructor injection
+	-setter injection
+	-carDelership project
+}
+Bean Scope{
+	-singleton
+	-prototype
+	-Social Media example Project
+}
+Bean Lifecycle {
+	-init
+	-Destroy
+	-Social Media example Project
+}
+
+Spring boot
+============
+--learning platform project
+@Component {
+	@Service
+	@Repository
+	@Controller
+}
+@Component("id")
+@Qualifier("id")
+@Scope("prototype")
+@Scope("singleton")
+@SpringBootApplication {
+	@Configuration
+	@@EnableAutoConfiguration
+	@ComponentScan
+}
+@Autowired
+@PostConstruct
+@PreDestroy
+
+--website project
+MVC Core {
+	mvc architecture
+	-mvc controller
+	-Domain object
+	-service layer
+	-model
+	-for  handling using jsp
+	-persistence layer (DAO)
+}
+@Repository
+
+--hotel project
+@RestController
+@RequestMapping
+@GetMapping
+@PathVatiable
+@PostMapping
+@GetMapping
+@DeleteMapping
+@PutMapping
+@ResponseStatus(HttpStatus.NOT_FOUND)
+@Size(min=3)
+@Min(value = 1)
+@Max(value = 10)
+@Valid
+
+--student project
+@Entity
+@Table(name ="student")
+@Id
+@GeneratedValue(strategy =GenerationType.AUTO)
+@Column

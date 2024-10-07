@@ -1,0 +1,17 @@
+server:
+    port: 8081
+spring:
+    application:
+        name: social_media
+    datasource:
+        password: Password~1234
+        url: jdbc:mysql://ajaydemosqlserver.mysql.database.azure.com:3306/studentdb
+        username: demouser
+    jpa:
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
+        show-sql: true

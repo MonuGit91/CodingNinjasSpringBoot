@@ -1,0 +1,47 @@
+public interface User {
+	public String getDetails();
+}
+
+public class Student implements User{
+	String name;
+	
+	public Student(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String getDetails() {
+		return name;
+	}
+
+}
+
+public class Teacher implements User {
+	String name;
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String getDetails() {
+		// TODO Auto-generated method stub
+		return name;
+	}
+
+}
+
+public class TestApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TestApplication.class, args);
+		User student = new Student("Ram");
+		Teacher teacher = new Teacher();
+		teacher.setName("Krishna");
+	}
+
+}

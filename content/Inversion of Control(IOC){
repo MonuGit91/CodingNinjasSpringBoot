@@ -1,0 +1,41 @@
+Inversion of Control(IOC){
+	-Bean creation
+	-table example project
+}
+dependency injection(DI){
+	-Constructor injection
+	-setter injection
+}
+Bean Scope{
+	-singleton
+	-prototype
+	-Social Media example Project
+}
+Bean Lifecycle {
+	-init
+	-Destroy
+	-Social Media example Project
+}
+Annotations
+@Component {
+	@Service
+	@Repository
+	@Controller
+}
+@Component("id")
+@Qualifier("id")
+@Scope("prototype")
+@Scope("singleton")
+@SpringBootApplication {
+	@Configuration
+	@@EnableAutoConfiguration
+	@ComponentScan
+}
+@Autowired
+@PostConstruct
+@PreDestroy
+@Repository
+@RestController
+@RequestMapping
+@GetMapping
+@PathVatiable
